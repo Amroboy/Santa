@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@Amroboy 
+Amroboy
+/
+Santa
+Public
+forked from terror-boy/WhiteDevil
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Santa/plugins/filters.js /
+@terror-boy
+terror-boy Removed bot cmd spl request of @sourav
+Latest commit 6aaf403 on 20 Nov 2021
+ History
+ 8 contributors
+@terror-boy@farhan-dqz@yusufusta@lyfe00011@afnanplk@phaticusthiccy@Xenon67@oguz162
+231 lines (216 sloc)  18.4 KB
+  
 /* Copyright (C) 2021 TERROR BOY.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
@@ -178,10 +208,10 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.AUTOSTICKER){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
-    if (!!message.mention && message.mention[0] == '919778042644@s.whatsapp.net') {
+    if (!!message.mention && message.mention[0] == '918089832052@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./White/stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['Hi','Bye','Muthe','Police','Teach','Thech','White devil','Z','aayo','alla','anthas','ayin','aysheri','bie','bye','chathu','cheyalle','chunk','committed','mama','marichu','mention','mood','muthe','myre','njan','number','ok','oombi','ooo','pedicho','pidi','poweresh','sad','saved','sed','shaad','shut','teach','test','thech','think','thund','umma','uyir','vannu','vibe','z','dead','JulieMwol','Like','pever','sry','night','indo','uff','eh','poyi','scene','killadi','nee alle','sheri','vada','poocha','morning','pm','thund','remove','Sed','araa','Da','madthu','Hlo','air','Bomb','Julie','myr','fan','charge',]
+const array = ['Hi','Bye','Muthe','Police','Teach','Thech','White devil','vilachil','aayo','alla','anthas','ayin','aysheri','bie','bye','chathu','cheyalle','chunk','committed','mama','marichu','mention','mood','muthe','myre','njan','number','ok','oombi','ooo','pedicho','pidi','poweresh','sad','saved','sed','shaad','shut','teach','test','thech','think','thund','umma','uyir','vannu','vibe','z','dead','JulieMwol','Like','pever','sry','night','indo','uff','eh','poyi','scene','killadi','nee alle','sheri','vada','poocha','morning','pm','thund','remove','Sed','araa','Da','madthu','Hlo','air','Bomb','Julie','myr','fan','charge',]
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -229,3 +259,16 @@ if(pattern.test(message.message)){
         }
     );
 }));
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
